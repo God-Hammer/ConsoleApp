@@ -1,4 +1,5 @@
-﻿using ConsoleApp.Utils;
+﻿using ConsoleApp.Algorithm;
+using ConsoleApp.Utils;
 
 internal class Program
 {
@@ -24,6 +25,9 @@ internal class Program
                     //ReversedString.HandCheckReversedString();
 
                     //LargestNumber.CountNumberInArray();
+
+                    Console.WriteLine("Sort");
+                    Sort.HandleSort();
 
                     break;
                 default:
