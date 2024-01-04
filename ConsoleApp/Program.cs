@@ -3,6 +3,17 @@ using ConsoleApp.Utils;
 
 internal class Program
 {
+
+
+    private static void Exercise()
+    {
+        int[] array1 = { 4, 3, 5, 10, 9, 8, 7 };
+        int[] array2 = { 5, 7, 8 };
+        int[] array3 = array1.Except(array2).ToArray();
+       
+
+        Console.WriteLine(string.Join(" | ", array3));
+    }
     private static void Main(string[] args)
     {
         int input;
@@ -26,8 +37,11 @@ internal class Program
 
                     //LargestNumber.CountNumberInArray();
 
-                    Console.WriteLine("Sort");
-                    Sort.HandleSort();
+                    //Console.WriteLine("Sort");
+                    //Sort.HandleSort();
+
+                    Console.WriteLine("Exercise");
+                    Exercise();
 
                     break;
                 default:
